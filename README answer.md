@@ -51,6 +51,7 @@ See 'snap info docker' for additional versions.
 ### Ответ
    - Скрин репозитория
 
+   ![Screenshot1_1](https://github.com/megasts/ter-homeworks/blob/terraform-03/03/img/Screenshot1_1.png)
 
    - скрин истории сканирований
 
@@ -77,6 +78,7 @@ See 'snap info docker' for additional versions.
 
     Скриншот sql-запросов
 
+----
 
 ## Задача 4
 1. Запустите в Yandex Cloud ВМ (вам хватит 2 Гб Ram).
@@ -85,6 +87,29 @@ See 'snap info docker' for additional versions.
 4. Зайдите на сайт проверки http подключений, например(или аналогичный): ```https://check-host.net/check-http``` и запустите проверку вашего сервиса ```http://<внешний_IP-адрес_вашей_ВМ>:8090```. Таким образом трафик будет направлен в ingress-proxy. ПРИМЕЧАНИЕ:  приложение(old_main.py) весьма вероятно упадет под нагрузкой, но успеет обработать часть запросов - этого достаточно. Обновленная версия (main.py) не прошла достаточного тестирования временем, но должна справиться с нагрузкой.
 5. (Необязательная часть) Дополнительно настройте remote ssh context к вашему серверу. Отобразите список контекстов и результат удаленного выполнения ```docker ps -a```
 6. В качестве ответа повторите  sql-запрос и приложите скриншот с данного сервера, bash-скрипт и ссылку на fork-репозиторий.
+
+----
+
+### Ответ
+
+    Скриншот sql-запросов
+
+    bash-скрипт:
+
+    ```bash
+      #!/bin/bash
+      if [ ! -d "/opt/shvirtd-example-python" ] ; then
+         sudo git clone -b process https://github.com/megasts/shvirtd-example-python.git /opt/shvirtd-example-python
+      else
+         cd /opt/shvirtd-example-python
+         sudo git pull
+      fi
+      sudo docker compose -f /opt/shvirtd-example-python/compose.yaml up -d
+    ```
+
+   ссылка на fork-репозиторий: 
+
+----
 
 ## Задача 5 (*)
 1. Напишите и задеплойте на вашу облачную ВМ bash скрипт, который произведет резервное копирование БД mysql в директорию "/opt/backup" с помощью запуска в сети "backend" контейнера из образа ```schnitzler/mysqldump``` при помощи ```docker run ...``` команды. Подсказка: "документация образа."
@@ -96,9 +121,43 @@ See 'snap info docker' for additional versions.
 Скачайте docker образ ```hashicorp/terraform:latest``` и скопируйте бинарный файл ```/bin/terraform``` на свою локальную машину, используя dive и docker save.
 Предоставьте скриншоты  действий .
 
+----
+
+### Ответ:
+
+команды:
+
+```sh
+$ alias dive="docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive"
+$ dive hashicorp/terraform:latest
+
+$ docker image save -o ~/Templates/image.tar.gz hashicorp/terraform
+$ tar xf image.tar.gz
+$ tar xf /home/megion/Templates/blobs/sha256/9861417e72dc021d24afce363d6a3f0e9fed05399f1a7c6610012fc74b1bb346
+```
+скриншот действий:
+
+----
+
 ## Задача 6.1
 Добейтесь аналогичного результата, используя docker cp.  
 Предоставьте скриншоты  действий .
+
+----
+
+### Ответ:
+
+команды:
+
+```sh
+$ docker run hashicorp/terraform:latest console
+$ docker container ls -a
+$ docker cp bba0be7f45ed:/bin/terraform ~/Templates/
+```
+скриншот действий:
+
+![Screenshot6_1](https://github.com/megasts/ter-homeworks/blob/terraform-03/03/img/Screenshot1_1.png)
+
 
 ## Задача 6.2 (**)
 Предложите способ извлечь файл из контейнера, используя только команду docker build и любой Dockerfile.  
