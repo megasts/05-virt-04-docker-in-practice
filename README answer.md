@@ -78,9 +78,9 @@ See 'snap info docker' for additional versions.
 
 ### Ответ
 
-    Скриншот sql-запросов
+   Скриншот sql-запросов
 
-    ![Screenshot3](https://github.com/megasts/05-virt-04-docker-in-practice/blob/main/img/Screenshot3.png)
+   ![Screenshot3](https://github.com/megasts/05-virt-04-docker-in-practice/blob/main/img/Screenshot3.png)
 
 ----
 
@@ -98,8 +98,7 @@ See 'snap info docker' for additional versions.
 
    Скриншот sql-запросов
 
-   ![Screenshot4](https://github.com/megasts/05-virt-04-docker-in-practice/blob/main/img/Screenshot4
-.png)
+   ![Screenshot4](https://github.com/megasts/05-virt-04-docker-in-practice/blob/main/img/Screenshot4.png)
 
 
     bash-скрипт:
@@ -145,8 +144,7 @@ $ tar xf /home/megion/Templates/blobs/sha256/9861417e72dc021d24afce363d6a3f0e9fe
 ```
 скриншот действий:
 
-![Screenshot6](https://github.com/megasts/05-virt-04-docker-in-practice/tree/main/img/Screenshot6
-.png)
+![Screenshot6](https://github.com/megasts/05-virt-04-docker-in-practice/tree/main/img/Screenshot6.png)
 
 ----
 
@@ -167,8 +165,7 @@ $ docker cp bba0be7f45ed:/bin/terraform ~/Templates/
 ```
 скриншот действий:
 
-![Screenshot6_1](https://github.com/megasts/05-virt-04-docker-in-practice/tree/main/img/Screenshot6
-_1.png)
+![Screenshot6_1](https://github.com/megasts/05-virt-04-docker-in-practice/tree/main/img/Screenshot6_1.png)
 
 
 ## Задача 6.2 (**)
