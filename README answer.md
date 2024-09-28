@@ -51,11 +51,11 @@ See 'snap info docker' for additional versions.
 ### Ответ
    - Скрин репозитория
 
-   ![Screenshot2_1](https://github.com/megasts/05-virt-04-docker-in-practice/tree/main/img/Screenshot2_1.png)
+   ![Screenshot2_1](https://github.com/megasts/05-virt-04-docker-in-practice/blob/main/img/Screenshot2_1.png)
 
    - скрин истории сканирований
 
-   ![Screenshot2_2](https://github.com/megasts/05-virt-04-docker-in-practice/tree/main/img/Screenshot2_2.png)
+   ![Screenshot2_2](https://github.com/megasts/05-virt-04-docker-in-practice/blob/main/img/Screenshot2_2.png)
 
 
 ## Задача 3
@@ -80,7 +80,7 @@ See 'snap info docker' for additional versions.
 
     Скриншот sql-запросов
 
-    ![Screenshot3](https://github.com/megasts/05-virt-04-docker-in-practice/tree/main/img/Screenshot3.png)
+    ![Screenshot3](https://github.com/megasts/05-virt-04-docker-in-practice/blob/main/img/Screenshot3.png)
 
 ----
 
@@ -98,7 +98,7 @@ See 'snap info docker' for additional versions.
 
    Скриншот sql-запросов
 
-   ![Screenshot4](https://github.com/megasts/05-virt-04-docker-in-practice/tree/main/img/Screenshot4
+   ![Screenshot4](https://github.com/megasts/05-virt-04-docker-in-practice/blob/main/img/Screenshot4
 .png)
 
 
