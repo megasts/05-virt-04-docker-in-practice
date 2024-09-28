@@ -51,9 +51,11 @@ See 'snap info docker' for additional versions.
 ### Ответ
    - Скрин репозитория
 
-   ![Screenshot1_1](https://github.com/megasts/ter-homeworks/blob/terraform-03/03/img/Screenshot1_1.png)
+   ![Screenshot2_1](https://github.com/megasts/05-virt-04-docker-in-practice/tree/main/img/Screenshot2_1.png)
 
    - скрин истории сканирований
+
+   ![Screenshot2_2](https://github.com/megasts/05-virt-04-docker-in-practice/tree/main/img/Screenshot2_2.png)
 
 
 ## Задача 3
@@ -78,6 +80,8 @@ See 'snap info docker' for additional versions.
 
     Скриншот sql-запросов
 
+    ![Screenshot3](https://github.com/megasts/05-virt-04-docker-in-practice/tree/main/img/Screenshot3.png)
+
 ----
 
 ## Задача 4
@@ -92,7 +96,11 @@ See 'snap info docker' for additional versions.
 
 ### Ответ
 
-    Скриншот sql-запросов
+   Скриншот sql-запросов
+
+   ![Screenshot4](https://github.com/megasts/05-virt-04-docker-in-practice/tree/main/img/Screenshot4
+.png)
+
 
     bash-скрипт:
 
@@ -107,7 +115,7 @@ See 'snap info docker' for additional versions.
       sudo docker compose -f /opt/shvirtd-example-python/compose.yaml up -d
     ```
 
-   ссылка на fork-репозиторий: 
+   ссылка на fork-репозиторий: [https://github.com/megasts/shvirtd-example-python/tree/process](https://github.com/megasts/shvirtd-example-python/tree/process)
 
 ----
 
@@ -137,6 +145,9 @@ $ tar xf /home/megion/Templates/blobs/sha256/9861417e72dc021d24afce363d6a3f0e9fe
 ```
 скриншот действий:
 
+![Screenshot6](https://github.com/megasts/05-virt-04-docker-in-practice/tree/main/img/Screenshot6
+.png)
+
 ----
 
 ## Задача 6.1
@@ -156,7 +167,8 @@ $ docker cp bba0be7f45ed:/bin/terraform ~/Templates/
 ```
 скриншот действий:
 
-![Screenshot6_1](https://github.com/megasts/ter-homeworks/blob/terraform-03/03/img/Screenshot1_1.png)
+![Screenshot6_1](https://github.com/megasts/05-virt-04-docker-in-practice/tree/main/img/Screenshot6
+_1.png)
 
 
 ## Задача 6.2 (**)
